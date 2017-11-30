@@ -1,0 +1,19 @@
+CREATE SCHEMA `katalogos` DEFAULT CHARACTER SET utf8 ;
+
+CREATE TABLE `katalogos`.`members`(
+`ID` INT(11) NOT NULL AUTO_INCREMENT,
+`LName` VARCHAR(45) NOT NULL,
+`FName` VARCHAR(45) NOT NULL,
+`Tel1` VARCHAR(30) NOT NULL,
+`Tel2` VARCHAR(30) NOT NULL,
+
+PRIMARY KEY (`ID`))
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8;
+
+INSERT INTO katalogos.members (LName,FName,Tel1,Tel2) VALUES
+('Aspa','Minaidou','2105963215','6945632174'),
+('Vaso','Lilitaki','2105423652','6985612356'),
+('Vasilis','Chouliaras','2104563218','6936547891'),
+('Nick','Mpatsikouras','2102521874','6952136998'),
+('Anastasia','Minaidou','2104917532','6941256321');
